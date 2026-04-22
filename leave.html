@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Leave Form</title>
+
+<style>
+body{
+  background:#0b0f19;
+  font-family:sans-serif;
+  text-align:center;
+  padding:30px;
+  color:white;
+}
+
+form{
+  background:#111827;
+  padding:20px;
+  border-radius:12px;
+  max-width:300px;
+  margin:auto;
+}
+
+input,textarea{
+  width:100%;
+  margin:10px 0;
+  padding:10px;
+  border:none;
+  border-radius:6px;
+  background:#1f2937;
+  color:white;
+}
+
+button{
+  width:100%;
+  padding:10px;
+  background:#38bdf8;
+  border:none;
+  border-radius:6px;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Leave Application</h2>
+
+<form onsubmit="submitForm(event)">
+<input placeholder="Name" required>
+<input placeholder="Roll Number" required>
+<input type="date" required>
+<input type="date" required>
+<textarea placeholder="Reason" required></textarea>
+<button>Submit</button>
+</form>
+
+<script>
+if(!localStorage.getItem('loggedIn')){
+ alert("Login first");
+ location.href="login.html";
+}
+
+function submitForm(e){
+ e.preventDefault();
+ alert("Leave Submitted!");
+}
+</script>
+
+</body>
+</html>
