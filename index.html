@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cauvery Hostel</title>
+
+<style>
+body{
+  font-family:sans-serif;
+  background:#0b0f19;
+  color:white;
+  margin:0;
+  text-align:center;
+}
+
+/* LOGO TOP LEFT */
+.logo{
+  position:absolute;
+  top:15px;
+  left:20px;
+}
+.logo img{ width:60px; }
+
+header{ padding:60px 20px 20px; }
+
+.card{
+  background:#111827;
+  padding:20px;
+  border-radius:12px;
+  margin:20px auto;
+  max-width:700px;
+}
+
+button{
+  padding:12px;
+  background:#38bdf8;
+  border:none;
+  border-radius:6px;
+  width:100%;
+  cursor:pointer;
+}
+button:hover{ background:#0ea5e9; }
+
+.grid{
+  display:grid;
+  gap:15px;
+}
+@media(min-width:768px){
+  .grid{grid-template-columns:1fr 1fr;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- LOGO -->
+<div class="logo">
+<img src="https://www.upgrad.com/_ww3-next/image/?url=https%3A%2F%2Fd2o2utebsixu4k.cloudfront.net%2FNIT%20Kurukshetra-f4e0725b871e412ba740bdafdf61e616.jpeg&w=3840&q=75">
+</div>
+
+<header>
+<h1>Cauvery Hostel</h1>
+<p>NIT Kurukshetra</p>
+</header>
+
+<div class="card">
+<h2>About Hostel</h2>
+<p>Comfortable and secure environment with modern facilities.</p>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4Djk3VHjxyubNaYsektkGQbnHpw1220Eefg&s">
+</div>
+
+<div class="card">
+<h2>Facilities</h2>
+<div class="grid">
+<div>WiFi</div>
+<div>Security</div>
+<div>Mess</div>
+<div>Sports</div>
+</div>
+</div>
+
+<div class="card">
+<h2>Fee Details</h2>
+<p>Room: ₹10,000</p>
+<p>Mess: ₹15,000</p>
+<p>Security: ₹5,000</p>
+</div>
+
+<div class="card">
+<h2>Rules</h2>
+<p>• Intiming: 8:30 PM</p>
+<p>• Permission required for night stay</p>
+</div>
+
+<div class="card">
+<h2>Location</h2>
+<iframe src="https://maps.google.com/maps?q=NIT%20Kurukshetra&output=embed" width="100%" height="250"></iframe>
+</div>
+
+<div class="card">
+<h2>Leave Application</h2>
+<button onclick="location.href='login.html'">Fill Leave Form</button>
+</div>
+
+</body>
+</html>
