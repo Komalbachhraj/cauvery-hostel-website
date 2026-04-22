@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Signup</title>
+
+<style>
+body{
+  background:#0b0f19;
+  font-family:sans-serif;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  color:white;
+}
+
+.box{
+  background:#111827;
+  padding:30px;
+  border-radius:12px;
+  width:300px;
+  text-align:center;
+}
+
+input{
+  width:100%;
+  padding:10px;
+  margin:10px 0;
+  border:none;
+  border-radius:6px;
+  background:#1f2937;
+  color:white;
+}
+
+button{
+  width:100%;
+  padding:10px;
+  background:#38bdf8;
+  border:none;
+  border-radius:6px;
+  margin-top:10px;
+  cursor:pointer;
+}
+
+a{ color:#38bdf8; display:block; margin-top:10px; }
+</style>
+</head>
+
+<body>
+
+<div class="box">
+<h2>Signup</h2>
+
+<input id="newUser" placeholder="Username">
+<input id="newPass" type="password" placeholder="Password">
+
+<button onclick="signup()">Signup</button>
+
+<a href="login.html">← Back to Login</a>
+
+<p id="msg"></p>
+</div>
+
+<script>
+function signup(){
+ if(newUser.value && newPass.value){
+  localStorage.setItem('user',newUser.value);
+  localStorage.setItem('pass',newPass.value);
+  msg.innerText="Signup successful!";
+ } else {
+  msg.innerText="Fill all fields";
+ }
+}
+</script>
+
+</body>
+</html>
